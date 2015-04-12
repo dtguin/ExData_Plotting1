@@ -18,9 +18,9 @@ plot2 <- function () {
         # Format the string values into POSIXct values
         dt <- strptime(datecol, "%d/%m/%Y %H:%M:%S")
         # Plot the Global_active_power (gap)  vs  Date/Time (dt)
-        plot(dt, gap, type="l", ylab = "Global Active Power (kilowatts")
+        plot(dt, gap, type="l", xlab = "", ylab = "Global Active Power (kilowatts)")
         # Create the plot2.png file
         png("plot2.png")
-        plot(dt, gap, type="l", ylab = "Global Active Power (kilowatts")
+        plot(dt, gap, type="l", xlab = "", ylab = "Global Active Power (kilowatts)")
         dev.off()
 }  
